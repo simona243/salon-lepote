@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salon lepote</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class='onama'>
+		<h2><a href="index.html">Salon lepote</a></h2>
+		<nav>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="narucivanje.html">Products</a></li>
+			<li><a href="onama.html">About us</a></li>
+			<li><a href="makeup.html">Makeup</a></li>
+		</nav>
+	</header>
+
+<div class="forma-glavna">
+  <form name="FormaNarucivanje">
+    <ul class="forma-polje">
+      <br><br><br><br><br>
+      <li>
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="Ime" placeholder="Unesi ime i prezime" required>
+      </li>
+      <li>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="EMail" placeholder="Unesi e-mail adresu" required>
+      </li>
+      <li>
+        <label for="telefon">Broj telefona</label>
+        <input type="tel" id="telefon" name="Telefon" placeholder="Unesi broj telefona" required>
+      </li>
+      <li>
+        <label for="datum">Datum dostave</label>
+        <input type="date" id="datum" placeholder="Unesi datum dostave" required>
+      </li>
+      <li>
+        <label for="adresa">Adresa</label>
+        <input type="text" id="adresa" name="Adresa" placeholder="Unesi adresu stanovanja">
+      </li>
+      <li>
+        <label for="message">Savet:</label>
+        <textarea rows="3" id="message" placeholder="Unesi savet" ></textarea>
+      </li>
+      <li>
+        <ul class="forma-unutra">
+          <li>
+            <input type="checkbox" id="potvrda" onclick="kliknuto()">
+            <label for="potvrda">Dodadni opis:</label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p id="zapis" style="display:none">Opis je zapisan</p>
+      </li>
+      <li>
+        <button type="submit" class='btn' onclick="validacija()">Poruči</button>
+      </li>
+    </ul>
+  </form>
+</div>
+<br>
+<footer>
+  <p>Powered by @...</p>
+</footer>
+</form>
+</body>
