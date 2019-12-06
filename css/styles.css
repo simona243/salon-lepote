@@ -1,0 +1,646 @@
+/*-------------
+ 	General
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: rgb(134, 23, 23);
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: lightgreen;
+	font-weight: 800;
+	text-align: center;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: green;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+form{
+	justify-content: center;
+	text-decoration-color: #555;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+}
+
+#x1{
+	position: relative;
+	background-color: #333;
+}
+
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+	display: flex;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+}
+
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+
+
+/*----------------
+ 	Pocetna strana
+----------------*/
+
+.hero{
+	position: relative;
+	justify-content: center;
+	height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75;
+}
+
+.hero h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn{
+	padding: 20px 46px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+
+
+/*--------------------
+ 	O nama
+---------------------*/
+
+.onama{
+	background: lightgreen;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+.оur-work{
+	background-color: #fff;
+	padding-top: 80px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.our-work .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.our-work #mape{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.our-work #mape #li{
+	paading:10px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.our-work #mape #li iframe{
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+}
+
+.drugi{
+	padding-top: 120px;
+	padding-bottom: 0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.our-work #mape #li h5:hover{
+	color: gray;
+	text-decoration: underline;
+}
+.our-team{
+	padding-top: 20px;
+	text-align: center;
+	align-content: center;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.osoba{
+	padding-bottom: 0px;
+	margin: 30px;
+	margin-bottom: 0px;
+}
+.osoba img{
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.osobaizliste{
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.slikaOnama{
+	width: 200px;
+}
+
+.our-work .grid li.small{
+	flex-basis: 40%;
+}
+
+.our-work .grid li.large{
+	flex-basis: 60%;
+}
+
+
+@media (max-width: 1000px){
+	.onama{
+		align-items: center;
+	justify-content: center;
+	}
+	.our-work {
+		padding-top: 50px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+
+	}
+	.our-work #mape{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}	.our-work #mape #li{
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.our-work #mape #li iframe{
+		width: 90%;
+		height: 90%;
+	}
+	.our-team .osobaizliste{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;	
+	}
+	.our-team .osobaizliste .osoba{
+		padding-bottom: -10px;
+		margin: 0px;
+		padding-top:0px ;
+	}
+	.section .drugi{
+		padding-bottom: 0px;
+	}
+	 .drugi .title{
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+	}
+	.drugi p{
+		padding-bottom: 0px;
+	}
+}
+
+
+
+
+/*----------------------
+ 	Features Section
+----------------------*/
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff;
+}
+
+.reviews .quote{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reviews .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1000px){
+
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
+	}
+
+}
+
+/*---------------------
+ 	Narucivanje
+---------------------*/
+  
+  forma-glavna {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .forma-glavna * {
+	box-sizing: border-box;
+  }
+  
+  .forma-polje,
+  .forma-unutra {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .forma-polje {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .forma-polje li,
+  .forma-unutra {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  }
+  
+  .forma-unutra {
+	padding: 0 8px;
+	justify-content: space-between;  
+  }
+  
+  .forma-polje > li:not(:last-child) {
+	margin-bottom: 20px;
+  }
+  
+  .forma-polje li label,
+  .forma-polje li p {
+	padding: 8px;
+	font-weight: 300;
+	letter-spacing: .09em;
+	text-transform: uppercase;
+  }
+  
+  .forma-polje > li > label,
+  .forma-polje li p {
+	flex: 1 0 120px;
+	max-width: 220px;
+  }
+  
+  .forma-polje > li > label + *,
+  .forma-unutra {
+	flex: 1 0 220px;
+  }
+  
+  .forma-polje li p {
+	margin: 0;
+  }
+  
+  .forma-polje li input:not([type='checkbox']),
+  .forma-polje li textarea {
+	padding: 15px;
+	border: none;
+  }
+  
+  .forma-polje li button {
+	margin-left: auto;
+	padding: 8px 16px;
+	border: none;
+	background: #333;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+	border-radius: 2px;
+  }
+
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact{
+	background-color: #f7f7f7;
+	padding-top: 60px;
+}
+
+.contact form{
+	display: flex;
+	/* align-items: center; */
+	justify-content: flex-end;
+	flex-direction: column;
+
+	/* max-width: 800px; */
+	width: 50%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: lightgreen;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;	
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}
